@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Кузня - Готові Сети</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="container" id="login-container">
+  <h1>Вхід до Кузні</h1>
+  <p>Введіть свій нік у Minecraft:</p>
+  <input type="text" id="nickname" placeholder="Ваш нік..." />
+  <button id="login-btn">Увійти</button>
+</div>
+
+<div class="container" id="main-content" style="display: none;">
+  <div id="profile-bar">
+    <span id="user-info">Нік: </span>
+    <button id="change-nick-btn">Змінити нік</button>
+    <button id="logout-btn">Вийти</button>
+  </div>
+
+  <h1>Кузня Minecraft: Готові Сети</h1>
+
+  <form id="add-set-form" style="display: none;">
+    <h2>Додати новий сет</h2>
+    <input type="text" id="set-name" placeholder="Назва сету" required />
+    <textarea id="set-description" placeholder="Опис сету" required></textarea>
+    <input type="text" id="set-items" placeholder="Предмети (через кому)" required />
+    <input type="file" id="set-image" accept="image/*" />
+    <button type="submit">Додати сет</button>
+  </form>
+
+  <div id="set-list"></div>
+
+  <div id="order-list" style="display: none;">
+    <h2>Замовлення</h2>
+    <ul id="orders"></ul>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
